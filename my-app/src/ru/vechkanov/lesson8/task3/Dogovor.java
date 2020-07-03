@@ -2,7 +2,7 @@ package ru.vechkanov.lesson8.task3;
 
 import java.util.ArrayList;
 
-public class Dogovor implements Printable{
+public class Dogovor implements Printable, Convertable{
     private int numberDogovor;
     private String date;
     private ArrayList<String> spisokTovar;
@@ -67,4 +67,26 @@ public class Dogovor implements Printable{
 
 
     }
+    @Override
+    public Akt toAkt() {
+        Akt akt = new Akt();
+        akt.setNumberAkt(this.getNumberDogovor());
+        akt.setDate(this.getDate());
+        akt.setDestination(this.getDestination());
+        akt.setSource(this.getSource());
+        akt.setSpisokTovar(this.getSpisokTovar());
+
+        return akt;
+
+
+
+
+    }
+
+
+
+
+
+
+
 }

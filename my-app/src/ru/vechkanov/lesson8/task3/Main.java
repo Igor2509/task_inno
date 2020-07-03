@@ -4,7 +4,7 @@ package ru.vechkanov.lesson8.task3;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-import static ru.vechkanov.lesson8.task3.Convert.toAkt;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -19,7 +19,7 @@ public class Main {
         dogovor.setSource("Николай Петрович");
         dogovor.print();
 
-        Akt akt = toAkt(dogovor);
+        Akt akt = dogovor.toAkt();
         akt.print();
     }
 }

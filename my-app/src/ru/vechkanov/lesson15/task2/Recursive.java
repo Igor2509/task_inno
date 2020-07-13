@@ -23,7 +23,7 @@ public class Recursive {
 
         for (File f : listOfFile) {
             if (!f.isDirectory()) {
-                for (int i = 0; i<depth; ++i) {
+                for (int d = 0; d<depth; ++d) {
                     System.out.print(" ");}
                 System.out.println(f.getName());
             } else if (file.isDirectory()) {

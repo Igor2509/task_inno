@@ -25,7 +25,7 @@ public class Library implements Addable, Serializable, Rebootable {
 
 
     @Override
-    public void rebootSave(String name) throws IOException {
+    public void rebootSave(String name) {
 
         try (
             FileOutputStream outputStream = new FileOutputStream(name);

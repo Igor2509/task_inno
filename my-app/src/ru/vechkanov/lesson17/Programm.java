@@ -22,6 +22,8 @@ public class Programm {
         rebootlibrary.rebootSave(backupfile);
         System.out.println("Восстанвливаем данные: ");
         Library lib = rebootlibrary.rebootLoad(backupfile);
+//      если нет файла на диске
+//      Library lib = rebootlibrary.rebootLoad("   ");
         lib.getAddBooks();
     }
 

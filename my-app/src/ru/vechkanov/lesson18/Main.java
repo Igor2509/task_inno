@@ -4,7 +4,9 @@ package ru.vechkanov.lesson18;
 
 public class Main {
 
+
     public static void main(String[] args) {
+
         if(args.length < 4) {
             System.out.println("в параметрах нужно указать:");
             System.out.println("имя входного файла");

@@ -1,7 +1,7 @@
 package ru.vechkanov.lesson22;
 
 import java.util.Comparator;
-import java.util.function.Function;
+
 
 public class PersonSuperComparator implements Comparator<Person> {
     @Override

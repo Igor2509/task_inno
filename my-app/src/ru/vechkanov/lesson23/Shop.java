@@ -20,7 +20,6 @@ public class Shop implements Basket{
     public void addProduct(String product, int quantity) {
         int temp;
         product =  product.toLowerCase().trim();
-        System.out.println(product);
         if (products.contains(product)) {
             int numberProduct=products.indexOf(product);
             temp = quantitys.get(numberProduct);

@@ -30,7 +30,7 @@ public class Shop implements Basket{
             quantitys.add(quantity);
 
         }
-        System.out.println(quantitys.toString());
+
     }
 
     @Override

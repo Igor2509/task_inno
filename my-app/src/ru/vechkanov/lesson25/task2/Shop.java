@@ -17,15 +17,11 @@ public class Shop implements Basket {
 
     @Override
     public void addProduct(String product, int quantity) {
-        product =  product.toLowerCase().trim();
-        if (products.containsKey(product)) {
-            products.computeIfPresent(product,(key, value) -> value+quantity);
+        product = product.toLowerCase().trim();
 
-        } else {
-            products.put(product, quantity);
+        products.computeIfPresent(product, (key, value) -> value + quantity);
+        products.putIfAbsent(product, quantity);
 
-
-        }
 
     }
 

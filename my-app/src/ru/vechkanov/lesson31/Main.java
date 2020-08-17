@@ -1,5 +1,4 @@
-package ru.vechkanov.lesson30;
-
+package ru.vechkanov.lesson31;
 
 
 public class Main {
